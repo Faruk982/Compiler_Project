@@ -1,0 +1,58 @@
+@@ This is a sample Faruki program
+
+@@ Variable declarations
+fint x = 10.
+ffloat y = 3.14.
+fchar c = 'A'.
+fstring message = "Hello, Faruki!".
+
+@@ Constant declaration
+f@int MAX_SIZE = 100.
+
+@@ Array declarations
+fint numbers(5, 0).
+fint sequence(5) = (1, 2, 3, 4, 5).
+
+@@ Function declaration with return type
+faruki fint add(fint a, fint b) {
+    emit a + b.
+}
+
+@@ Void function declaration
+faruki void printMessage(fstring msg) {
+    emit msg.
+}
+
+@@ If-else statement
+_Check [x > 5] then {
+    fstring result = "x is greater than 5".
+}
+_orelse [x == 5] then {
+    fstring result = "x equals 5".
+}
+_else {
+    fstring result = "x is less than 5".
+}
+
+@@ Switch statement with default case
+_match [x] {
+    [1] {
+        fstring msg = "One".
+    }
+    [2] {
+        fstring msg = "Two".
+    }
+    [default] {
+        fstring msg = "Other".
+    }
+}
+
+@@ For loop
+_Repeat fint i from 0 to 10 with 1 {
+    fint square = i * i.
+}
+
+@@ While loop
+until [x > 0] {
+    x = x - 1.
+} 
