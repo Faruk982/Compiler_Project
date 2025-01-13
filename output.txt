@@ -1,8 +1,72 @@
 === Starting Faruki Language Parser ===
 
 DECLARATION: Line 4 - Variable 'x' of type 'variable' initialized with '10'
+SYMBOL: Added 'x' of type 'variable' to scope level 0
 DECLARATION: Line 5 - Variable 'y' of type 'variable' initialized with '3.140000'
+SYMBOL: Added 'y' of type 'variable' to scope level 0
+DECLARATION: Line 7 - Variable 'c' of type 'variable' initialized with ''A''
+SYMBOL: Added 'c' of type 'variable' to scope level 0
+DECLARATION: Line 8 - Variable 'message' of type 'variable' initialized with '"Hello, Faruki!"'
+SYMBOL: Added 'message' of type 'variable' to scope level 0
+DECLARATION: Line 13 - Variable 'MAX_SIZE' of type 'constant' initialized with '100'
+SYMBOL: Added 'MAX_SIZE' of type 'constant' to scope level 0
+DECLARATION: Line 17 - Variable 'numbers' of type 'array' initialized with 'undefined'
+SYMBOL: Added 'numbers' of type 'array' to scope level 0
+DECLARATION: Line 18 - Variable 'sequence' of type 'array' initialized with 'initialized'
+SYMBOL: Added 'sequence' of type 'array' to scope level 0
+SEMANTIC: Line 21 - Entering new function scope
+SYMBOL: Added 'add' of type 'function' to scope level 0
+SYMBOL: Added 'a' of type 'parameter' to scope level 1
+SYMBOL: Added 'b' of type 'parameter' to scope level 1
+OPERATION: Line 22 - Arithmetic operation '+' between 'a' and 'b'
+EMIT: Line 22 - Outputting value '(a + b)'
+SEMANTIC: Line 23 - Exiting function scope
+SEMANTIC: Line 26 - Entering new function scope
+SYMBOL: Added 'printMessage' of type 'void function' to scope level 0
+SYMBOL: Added 'msg' of type 'parameter' to scope level 1
+DECLARATION: Line 27 - Variable 'x' of type 'variable' initialized with '10'
+SYMBOL: Added 'x' of type 'variable' to scope level 1
+EMIT: Line 28 - Outputting value 'msg'
+SEMANTIC: Line 29 - Exiting function scope
+OPERATION: Line 32 - Comparison operation '>' between 'x' and '5'
+SEMANTIC: Line 32 - Entering if block scope
+DECLARATION: Line 33 - Variable 'result' of type 'variable' initialized with '"x is greater than 5"'
+SYMBOL: Added 'result' of type 'variable' to scope level 1
+SEMANTIC: Line 34 - Exiting if block scope
+OPERATION: Line 35 - Comparison operation '==' between 'x' and '5'
+SEMANTIC: Line 35 - Entering else-if block scope
+ASSIGNMENT: Line 36 - Variable 'result' assigned value '"x equals 5"'
+SEMANTIC: Line 37 - Exiting else-if block scope
+SEMANTIC: Line 38 - Entering else block scope
+ASSIGNMENT: Line 39 - Variable 'result' assigned value '"x is less than 5"'
+SEMANTIC: Line 40 - Exiting else block scope
+SEMANTIC: Line 44 - Entering case block scope
+CASE: Line 44 - Case with condition '1'
+DECLARATION: Line 45 - Variable 'msgs' of type 'variable' initialized with '"One"'
+SYMBOL: Added 'msgs' of type 'variable' to scope level 1
+SEMANTIC: Line 46 - Exiting case block scope
+SEMANTIC: Line 47 - Entering case block scope
+CASE: Line 47 - Case with condition '2'
+ASSIGNMENT: Line 48 - Variable 'msgs' assigned value '"Two"'
+SEMANTIC: Line 49 - Exiting case block scope
+SEMANTIC: Line 50 - Entering default case block scope
+CASE: Line 50 - Default case
+ASSIGNMENT: Line 51 - Variable 'msgs' assigned value '"Other"'
+SEMANTIC: Line 52 - Exiting default case block scope
+SEMANTIC: Line 56 - Entering for loop scope
+OPERATION: Line 57 - Arithmetic operation '*' between 'i' and 'i'
+DECLARATION: Line 57 - Variable 'square' of type 'variable' initialized with '(i * i)'
+SYMBOL: Added 'square' of type 'variable' to scope level 1
+SEMANTIC: Line 58 - Exiting for loop scope
+OPERATION: Line 61 - Comparison operation '>' between 'x' and '0'
+CONDITION: Line 61 - While loop condition: '(x > 0)'
+SEMANTIC: Line 61 - Entering while loop scope
+OPERATION: Line 62 - Arithmetic operation '-' between 'x' and '1'
+ASSIGNMENT: Line 62 - Variable 'x' assigned value '(x - 1)'
+SEMANTIC: Line 63 - Exiting while loop scope
+
+Error on line 64: Duplicate identifier 'x' in scope 0 (previously declared as variable)
 
 === Parsing Complete ===
-Parsing failed due to errors
-Total lines processed: 6
+Parsing failed due to semantic errors
+Total lines processed: 64
