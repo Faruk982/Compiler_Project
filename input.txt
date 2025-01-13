@@ -3,14 +3,15 @@
 @@ Variable declarations
 fint x = 10.
 fint y = 3.14.
-ffloat y = 3.14.
+
 fchar c = 'A'.
 fstring message = "Hello, Faruki!".
 
-fstring c = "Hello, Faruki!".
+
 
 @@ Constant declaration
 f@int MAX_SIZE = 100.
+
 
 @@ Array declarations
 fint numbers(5, 0).
@@ -23,6 +24,7 @@ faruki fint add(fint a, fint b) {
 
 @@ Void function declaration
 faruki void printMessage(fstring msg) {
+     fint x = 10.
     emit msg.
 }
 
@@ -31,10 +33,10 @@ _Check [x > 5] then {
     fstring result = "x is greater than 5".
 }
 _orelse [x == 5] then {
-    fstring result = "x equals 5".
+     result = "x equals 5".
 }
 _else {
-    fstring result = "x is less than 5".
+     result = "x is less than 5".
 }
 
 @@ Switch statement with default case
@@ -43,10 +45,10 @@ _match [x] {
         fstring msg = "One".
     }
     [2] {
-        fstring msg = "Two".
+         msg = "Two".
     }
     [default] {
-        fstring msg = "Other".
+         msg = "Other".
     }
 }
 
@@ -59,3 +61,4 @@ _Repeat fint i from 0 to 10 with 1 {
 until [x > 0] {
     x = x - 1.
 } 
+fint x=10.
