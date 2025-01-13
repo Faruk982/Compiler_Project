@@ -2,9 +2,12 @@
 
 @@ Variable declarations
 fint x = 10.
+fint y = 3.14.
 ffloat y = 3.14.
 fchar c = 'A'.
 fstring message = "Hello, Faruki!".
+
+fstring c = "Hello, Faruki!".
 
 @@ Constant declaration
 f@int MAX_SIZE = 100.

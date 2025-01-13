@@ -1,0 +1,28 @@
+# Generated files
+lex.yy.c
+*.tab.c
+*.tab.h
+*.output
+
+# Executable
+*.exe
+*.out
+
+# Object files
+*.o
+
+# Debug files
+*.dSYM/
+
+# Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak 

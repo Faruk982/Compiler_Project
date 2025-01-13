@@ -1,0 +1,8 @@
+=== Starting Faruki Language Parser ===
+
+DECLARATION: Line 4 - Variable 'x' of type 'variable' initialized with '10'
+DECLARATION: Line 5 - Variable 'y' of type 'variable' initialized with '3.140000'
+
+=== Parsing Complete ===
+Parsing failed due to errors
+Total lines processed: 6

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "y.tab.h"
+#include "faruki.tab.h"
 
 int line_num = 1;
 %}
