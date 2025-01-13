@@ -42,13 +42,13 @@ _else {
 @@ Switch statement with default case
 _match [x] {
     [1] {
-        fstring msg = "One".
+        fstring msgs = "One".
     }
     [2] {
-         msg = "Two".
+         msgs = "Two".
     }
     [default] {
-         msg = "Other".
+         msgs = "Other".
     }
 }
 
